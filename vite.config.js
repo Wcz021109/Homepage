@@ -10,6 +10,9 @@ import viteCompression from "vite-plugin-compression";
 // https://vitejs.dev/config/
 export default ({ mode }) =>
   defineConfig({
+    optimizeDeps: {
+      include: ["pinia-plugin-persistedstate"],
+    },
     plugins: [
       vue(),
       AutoImport({
@@ -117,6 +120,9 @@ export default ({ mode }) =>
         compress: {
           pure_funcs: ["console.log"],
         },
+      },
+      rollupOptions: {
+        external: [],
       },
     },
   });
