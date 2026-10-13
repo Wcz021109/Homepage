@@ -98,7 +98,7 @@ export default ({ mode }) =>
       alias: [
         {
           find: "@",
-          replacement: resolve(__dirname, "src"),
+          replacement: resolve(import.meta.dirname, "src"),
         },
       ],
     },
@@ -106,7 +106,7 @@ export default ({ mode }) =>
       preprocessorOptions: {
         scss: {
           charset: false,
-          loadPaths: [resolve(__dirname, "src/style")],
+          loadPaths: [resolve(import.meta.dirname, "src/style")],
           additionalData: `@use "global" as *;`,
         },
       },
