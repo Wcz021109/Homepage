@@ -118,5 +118,8 @@ export default ({ mode }) =>
           pure_funcs: ["console.log"],
         },
       },
+      rollupOptions: {
+        external: ['pinia-plugin-persistedstate'],
+      },
     },
   });
