@@ -27,9 +27,9 @@ export default ({ mode }) =>
           runtimeCaching: [
             {
               urlPattern: /(.*?)\.(js|css|woff2|woff|ttf)/, // js / css 静态资源缓存
-              handler: "CacheFirst",
+              handler: "NetworkFirst",
               options: {
-                cacheName: "js-css-cache",
+                cacheName: "image-cache",
               },
             },
             {
