@@ -1,5 +1,5 @@
 import { createApp } from "vue";
-import "@/style/style.scss";
+import "@/style/style.css";
 import App from "@/App.vue";
 // 引入 pinia
 import { createPinia } from "pinia";
