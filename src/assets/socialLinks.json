@@ -15,13 +15,13 @@
     "name": "QQ",
     "icon": "/images/icon/qq.png",
     "tip": "QQ弃用，请勿点击",
-    "url": "https://res.abeim.cn/api/qq/?qq=0"
+    "url": ""
   },
   {
     "name": "Email",
     "icon": "/images/icon/email.png",
     "tip": "来封 Email ~",
-    "url": "wcz5234@163.com"
+    "url": ""
   },
   {
     "name": "Twitter",
